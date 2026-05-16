@@ -525,7 +525,7 @@ Business Recommendations
 ## Step 1: Clone Repository
 
 ```bash
-git clone [<repository-link>](https://github.com/RamneetKaur2805/Customer-Churn-Prediction)
+git clone (https://github.com/RamneetKaur2805/Customer-Churn-Prediction)
 ```
 
 ---

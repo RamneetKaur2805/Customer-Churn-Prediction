@@ -445,20 +445,20 @@ This is the most dangerous situation because the company loses customers unexpec
 
 When evaluating models for churn prediction, it's crucial to consider not just overall accuracy, but also specific metrics like Precision, Recall, and F1-Score, as the cost of false positives (predicting churn when a customer won't) versus false negatives (failing to predict churn when a customer will) can be very different.
 
-Accuracy: Overall correctness of the model. Useful when classes are balanced.
-Precision: Of all customers predicted to churn, what percentage actually churned? (Minimizing false positives).
-Recall: Of all customers who actually churned, what percentage did the model correctly identify? (Minimizing false negatives).
-F1-Score: The harmonic mean of precision and recall. A good balance between the two.
-Which metric matters most for churn prediction?
+**Accuracy:** Overall correctness of the model. Useful when classes are balanced.
+**Precision:** Of all customers predicted to churn, what percentage actually churned? (Minimizing false positives).
+**Recall:** Of all customers who actually churned, what percentage did the model correctly identify? (Minimizing false negatives).
+**F1-Score:** The harmonic mean of precision and recall. A good balance between the two.
+### Which metric matters most for churn prediction?
 For churn prediction, Recall is often the most critical metric. Here's why:
 
 Cost of False Negatives: A false negative means the model predicted a customer would not churn, but they did churn. These are missed opportunities for intervention. The business loses a customer without even trying to retain them.
 Intervention and Retention: Businesses want to identify as many potential churners as possible so they can proactively intervene with retention strategies (e.g., special offers, personalized support). If a customer is incorrectly predicted to churn (false positive), the cost might be a wasted retention effort or a slightly annoyed customer, but the customer is still retained. If a customer who will churn is missed (false negative), the business loses them entirely.
 Therefore, we typically prioritize a model that has higher Recall for the 'Churn' class (class 1), even if it means slightly lower precision or overall accuracy, because maximizing the identification of actual churners is usually the primary goal for retention efforts.
 
-Model Selection Based on the comparison:
+### Model Selection Based on the comparison:
 
-Logistic Regression shows higher scores across Accuracy, Precision, Recall, and F1-Score for the 'Churn' class compared to the Decision Tree model.
+**Logistic Regression** shows higher scores across Accuracy, Precision, Recall, and F1-Score for the 'Churn' class compared to the Decision Tree model.
 Specifically, Logistic Regression has a Recall of 0.55 (correctly identifies 55% of actual churners), while the Decision Tree has a Recall of 0.52. Although both are not extremely high, Logistic Regression is slightly better at identifying churners.
 Given that Recall is the most important metric for churn prediction (to minimize missed opportunities for intervention), Logistic Regression is the more suitable model for this business problem.
 While the Decision Tree is generally easier to interpret, its performance metrics are lower in this scenario. Therefore, the Logistic Regression model provides a better balance of predictive power for our objective of identifying potential churners.
@@ -525,7 +525,7 @@ Business Recommendations
 ## Step 1: Clone Repository
 
 ```bash
-git clone <repository-link>
+git clone [<repository-link>](https://github.com/RamneetKaur2805/Customer-Churn-Prediction)
 ```
 
 ---
